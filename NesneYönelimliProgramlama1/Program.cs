@@ -16,15 +16,18 @@ namespace NesneYönelimliProgramlama1
             product1.ProductName = "Masa";
             product1.UnitPrice = 500;
             product1.UnitsInStok = 3;
+           
 
             Product product2 = new Product { Id = 2 , CategoryId = 5 , UnitsInStok = 5  , ProductName = "Kalem" , UnitPrice = 35};
 
             ProductManager productManager = new ProductManager();
             productManager.Add(product1 );
+            productManager.Add(product2);
+            Console.WriteLine(product2.ProductName);
             Console.WriteLine(product1.ProductName);
 
 
-            Console.ReadLine(); 
+            Console.ReadLine();
 
 
         }
